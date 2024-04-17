@@ -1,23 +1,9 @@
-import React, { useState } from "react";
-import Signup from "./components/signup";
-import Hero from "./components/hero";
-
+import LandingPage from "./components/landingpage";
+import { useState } from "react";
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Manage modal state
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  return (
-    <div className="App">
-      <Hero isOpen={isModalOpen} openModal={openModal} />  {/* Pass props to Hero */}
-    </div>
-  );
+  return ( 
+    <LandingPage/>
+   );
 }
 
 export default App;
