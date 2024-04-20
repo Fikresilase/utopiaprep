@@ -1,12 +1,10 @@
 import LandingPage from "./components/landingpage";
-import { useState } from "react";
-import Signupmodal from "./components/signupmodal";
+import Features from "./components/features";
 
-import hero from "../src/images/hero.svg"
 function App() {
-  return ( 
-    <LandingPage />
-   );
+  return <>
+  <LandingPage/><Features/>
+  </>;
 }
 
 export default App;
