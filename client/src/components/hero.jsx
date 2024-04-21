@@ -1,28 +1,29 @@
+import React from "react";
 import hero from "../images/hero.svg";
+
 function Hero() {
   return (
-    <div className="body container flex  pb-4 justify-between">
-      <div className="description flex items-center">
-        <div className="textholder">
-          {" "}
-          <h1 className="text-6xl font-serif text-blue-950 font-medium whitespace-nowrap pr-8 mr-8">
-            AI guided preparation <br /> for your exam
-          </h1>
-          <h1 className="font-sans font-medium text-lg text-gray-600">
-            The best resource to prepare for your exam while AI is explaining
-            everything <br /> and guiding you through the whole process using
-            the best study practices.
-          </h1>
-          <div className="text-center text-2xl font-medium text-blue-950">
-            {" "}
-            <a href="" className="underline">
-              Start rigth Here
-            </a>
-          </div>
+    <div className="container flex flex-col lg:flex-row items-center lg:py-">
+      <div className="lg:w-1/2 lg:pr-12">
+        <h1 className="text-4xl lg:text-6xl font-serif text-blue-950 font-medium leading-snug lg:leading-tight mb-4 lg:mb-6">
+          AI-Guided Exam Preparation
+        </h1>
+        <p className="text-base lg:text-lg text-gray-700 leading-relaxed mb-6 lg:mb-8">
+          The ultimate resource for preparing for your exam with AI-guided
+          assistance. Learn effectively with personalized explanations and
+          guidance tailored to your needs.
+        </p>
+        <div className="text-center lg:text-left">
+          <a
+            href="#"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-full transition duration-300"
+          >
+            Start Now
+          </a>
         </div>
       </div>
-      <div className="heroimage ">
-        <img src={hero} alt="" className=" " width={2000} />
+      <div className="lg:w-1/2 mt-8 lg:mt-0">
+        <img src={hero} alt="Hero" className="w-full" />
       </div>
     </div>
   );
