@@ -3,7 +3,7 @@ import hero from "../images/hero.svg";
 
 function Hero() {
   return (
-    <div className="container flex flex-col lg:flex-row items-center lg:py-">
+    <div id="home" className=" bg-blue-100 p-8 flex flex-col lg:flex-row items-center lg:py-3">
       <div className="lg:w-1/2 lg:pr-12">
         <h1 className="text-4xl lg:text-6xl font-serif text-blue-950 font-medium leading-snug lg:leading-tight mb-4 lg:mb-6">
           AI-Guided Exam Preparation

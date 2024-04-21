@@ -4,7 +4,7 @@ import ai from "../images/ai.png";
 
 function Features() {
   return (
-    <section className="features mx-auto container  py-16 px-4 md:px-8">
+    <section id="features" className="features mx-auto container  py-16 px-4 md:px-8">
       <h2 className="text-center text-3xl font-serif font-medium text-gray-800 dark:text-white mb-8">
         How It Works
       </h2>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function PricingSection  ()  {
   return (
-    <div className=" mx-8 my-4 p-8 ">
+    <div id='pricing' className=" mx-8 my-4 p-8 ">
         <hr className="border-t border-gray-300 my-4" />
       <div>
         <h2 className="text-3xl text-blue-950 font-semibold tracki text-center mt- sm:text-5xl ">Pricing</h2>
