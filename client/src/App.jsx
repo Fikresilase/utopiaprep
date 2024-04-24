@@ -4,12 +4,17 @@ import Resources from "./components/pricing";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
-// import Leader from "./components/landingpage";
+import Landing from "./components/landingpage";
+import Signupmodal from "./components/signupmodal";
+import Loginmodal from "./components/Loginmodal";
+
+
 
 function App() {
   return <>
   <Header/><Hero/><Features/><Resources/><Footer/>
-  {/* <Leader/> */}
+  <Loginmodal/>
+  <Signupmodal/>
   </>;
 }
 
