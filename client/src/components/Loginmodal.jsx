@@ -1,3 +1,6 @@
+import google from "../images/google.svg";
+import facebook from "../images/facebook.svg";
+
 function Loginmodal() {
   return (
     <div>
@@ -71,12 +74,22 @@ function Loginmodal() {
                   type="submit"
                   className="w-full mb-3 bg-gray-50 hover:bg-gray-100 focus:ring-1 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
+                  <img
+                    src={google}
+                    alt="Google Icon"
+                    class="h-5 w-5 inline-block mr-2"
+                  />{" "}
                   Continue with Google
                 </button>
                 <button
                   type="submit"
                   className="w-full mb-3 bg-gray-50 hover:bg-gray-100 focus:ring-1 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
+                  <img
+                    src={facebook}
+                    alt="Google Icon"
+                    class="h-5 w-5 inline-block mr-2"
+                  />{" "}
                   Continue with Facebook
                 </button>
               </div>
