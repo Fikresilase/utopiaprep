@@ -1,7 +1,7 @@
 import google from "../images/google.svg";
 import facebook from "../images/facebook.svg";
 
-function Loginmodal({ onClose }) {
+function Loginmodal({ onClose, onSignupOpen }) {
   return (
     <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 bg-gray-800 bg-opacity-50">
       <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative">
@@ -74,9 +74,12 @@ function Loginmodal({ onClose }) {
         </div>
         <p className="text-sm font-light text-gray-500">
           Need an account?{" "}
-          <a href="/signin" className="font-medium text-blue-600 hover:underline">
+          <button onClick={() => {
+              onSignupOpen();
+              onClose();
+            }} className="font-medium text-blue-600 hover:underline">
             Sign up here
-          </a>
+          </button>
         </p>
       </div>
     </div>

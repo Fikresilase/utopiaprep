@@ -12,16 +12,23 @@ function App() {
   const [showLoginmodal, setshowLoginmodal] = useState(false);
   return (
     <>
-      <Header onSignupOpen={() => setshowSignupmodal(true)} 
-      onLoginOpen={() => setshowLoginmodal(true)} />
+      <Header
+        onSignupOpen={() => setshowSignupmodal(true)}
+        onLoginOpen={() => setshowLoginmodal(true)}
+      />
       {showSignupmodal && (
-        <Signupmodal onClose={() => setshowSignupmodal(false)} />
+        <Signupmodal
+          onLoginOpen={() => setshowLoginmodal(true)}
+          onClose={() => setshowSignupmodal(false)}
+        />
       )}
       {showLoginmodal && (
-        <Loginmodal onClose={() => setshowLoginmodal(false)} />
+        <Loginmodal
+          onSignupOpen={() => setshowSignupmodal(true)}
+          onClose={() => setshowLoginmodal(false)}
+        />
       )}
-      <Hero 
-      onLoginOpen={() => setshowLoginmodal(true)} />
+      <Hero onLoginOpen={() => setshowLoginmodal(true)} />
       <Features />
       <Resources />
       <Footer />
