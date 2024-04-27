@@ -1,8 +1,6 @@
-import { useState } from "react";
-import { modal } from "react-modal";
-import Signupmodal from "./signupmodal";
+// Header.js
 
-function Header() {
+function Header({ onSignupOpen, onLoginOpen }) {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
@@ -39,10 +37,16 @@ function Header() {
         </a>
       </div>
       <div className="registration flex flex-wrap justify-center lg:justify-end">
-        <button className="mb-2 lg:mb-0 mr-2 lg:mr-4 px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base rounded font-sans border-none font-semibold text-blue-900 hover:text-white hover:bg-blue-600 hover:shadow-md duration-300 transition-colors">
+        <button
+          onClick={onLoginOpen}
+          className="px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base rounded font-sans border-none font-semibold text-blue-900 hover:text-white hover:bg-blue-600 hover:shadow-md duration-300 transition-colors"
+        >
           Login
         </button>
-        <button className="px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base rounded font-sans  border-none font-semibold text-blue-900 hover:text-white hover:bg-blue-600 hover:shadow-md duration-300 transition-colors">
+        <button
+          onClick={onSignupOpen}
+          className="px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base rounded font-sans border-none font-semibold text-blue-900 hover:text-white hover:bg-blue-600 hover:shadow-md duration-300 transition-colors"
+        >
           Signup
         </button>
       </div>
