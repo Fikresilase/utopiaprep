@@ -14,27 +14,33 @@ function Header({ onSignupOpen, onLoginOpen }) {
         </h1>
       </div>
       <div className="navbar mb-4 lg:mb-0 flex flex-wrap justify-center lg:justify-start">
-        <a
-          onClick={() => scrollToSection("home")}
-          href="#home"
-          className="mx-2 lg:mx-4 px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base text-blue-900 transition duration-300 hover:bg-blue-200 rounded-lg"
-        >
-          Home
-        </a>
-        <a
-          onClick={() => scrollToSection("features")}
-          href="#features"
-          className="mx-2 lg:mx-4 px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base text-blue-900 transition duration-300 hover:bg-blue-200 rounded-lg"
-        >
-          Features
-        </a>
-        <a
-          onClick={() => scrollToSection("pricing")}
-          href="#pricing"
-          className="mx-2 lg:mx-4 px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base text-blue-900 transition duration-300 hover:bg-blue-200 rounded-lg"
-        >
-          Pricing
-        </a>
+      <a
+  onClick={() => scrollToSection("home")}
+  href="#home"
+  className="mx-2 lg:mx-4 px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base text-blue-900 transition duration-300 rounded-lg group"
+>
+  Home
+  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-900"></span>
+</a>
+
+
+<a
+  onClick={() => scrollToSection("features")}
+  href="#features"
+  className="mx-2 lg:mx-4 px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base text-blue-900 transition duration-300 rounded-lg group"
+>
+  Features
+  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-900"></span>
+</a>
+<a
+  onClick={() => scrollToSection("pricing")}
+  href="#pricing"
+  className="mx-2 lg:mx-4 px-3 lg:px-4 py-1 lg:py-2 text-sm lg:text-base text-blue-900 transition duration-300  rounded-lg group"
+>
+  Pricing
+  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-900"></span>
+</a>
+
       </div>
       <div className="registration flex flex-wrap justify-center lg:justify-end">
         <button
