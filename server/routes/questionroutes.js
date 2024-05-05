@@ -1,8 +1,13 @@
- const express=require('express');
- const router=express.Router()
+const express = require('express');
+const router = express.Router();
 
- router.get('/api/goals',(req,res)=>{
-    res.status(200).json({message:'get questions'})
- })
+// Define routes related to questions
+router.get('/api/questions', (req, res) => {
+    res.send('GET request to questions');
+});
+router.post('/api/answers', (req, res) => {
+    res.send('POST request to questions');
+});
 
- module.exports=router
+
+module.exports = router;
