@@ -1,13 +1,13 @@
-const express = require('express');
+// question router file
+const express = require("express");
 const router = express.Router();
 
-// Define routes related to questions
-router.get('/api/questions', (req, res) => {
-    res.send('GET request to questions');
-});
-router.post('/api/answers', (req, res) => {
-    res.send('POST request to questions');
-});
+const { getAnswers, getQuestions } = require("../controllers/questioncontroller");
 
+// Define route for GET requests to /api/questions
+router.get("/api/questions", getQuestions);
+
+// Define route for POST requests to /api/questions
+router.post("/api/answers", getAnswers);
 
 module.exports = router;
